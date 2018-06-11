@@ -1,0 +1,9 @@
+heartbeat.monitors:
+- type: icmp
+  schedule: '@every 10s'
+  hosts:
+    - 172.17.10.8 
+
+output.elasticsearch:
+  hosts: ['elasticsearch:9200']
+
