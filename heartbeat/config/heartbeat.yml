@@ -4,6 +4,7 @@ heartbeat.monitors:
   hosts:
     - 172.17.10.8 
 
+
 output.elasticsearch:
   hosts: ['elasticsearch:9200']
 
