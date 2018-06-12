@@ -1,3 +1,11 @@
+
+# Nick note
+ * Before start up whole container.
+    * chmod 600 heartbeat/config/heartbeat.yml
+    * cd /ELK/docker_elk
+       * docker-compose -f docker-compose.yml up
+ * http://172.17.10.51:5601
+ 
 # Docker ELK stack
 
 [![Join the chat at https://gitter.im/deviantony/docker-elk](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/deviantony/docker-elk?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
