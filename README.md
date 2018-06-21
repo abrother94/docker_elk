@@ -4,14 +4,15 @@
  ```console
     * chmod 600 heartbeat/config/heartbeat.yml
     * cd /ELK/docker_elk
-       * vim heartbeat/config/heartbeat.yml  //To change IP you want to watch
+    * vim heartbeat/config/heartbeat.yml  //To change IP you want to watch
 
          hosts:
          - 172.17.8.188
-       * docker-compose -f docker-compose.yml up
+    * docker-compose -f docker-compose.yml up
  ```
- * http://172.17.10.51:5601
- 
+ * connect to kibana http://172.17.10.51:5601
+   * import demo dashboard config from "export/export.json" to "Management-->Save Object -> import 
+   
 # Docker ELK stack
 
 [![Join the chat at https://gitter.im/deviantony/docker-elk](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/deviantony/docker-elk?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
