@@ -9,6 +9,7 @@
          hosts:
          - 172.17.8.188
     * docker-compose -f docker-compose.yml up
+    * make sure volt is up and psme service is running.
     * run standalone Rest_Client in voltha environmnet.
  ```
  * connect to kibana http://172.17.10.51:5601
