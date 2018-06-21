@@ -1,9 +1,15 @@
 
 # Nick note
  * Before start up whole container.
+ ```console
     * chmod 600 heartbeat/config/heartbeat.yml
     * cd /ELK/docker_elk
+       * vim heartbeat/config/heartbeat.yml  //To change IP you want to watch
+
+         hosts:
+         - 172.17.8.188
        * docker-compose -f docker-compose.yml up
+ ```
  * http://172.17.10.51:5601
  
 # Docker ELK stack
