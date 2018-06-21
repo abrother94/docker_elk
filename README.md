@@ -1,5 +1,5 @@
 
-# Nick note
+# Nick's Notes
  * Before start up whole container.
  ```console
     * chmod 600 heartbeat/config/heartbeat.yml
@@ -9,10 +9,16 @@
          hosts:
          - 172.17.8.188
     * docker-compose -f docker-compose.yml up
+    * run standalone Rest_Client in voltha environmnet.
  ```
  * connect to kibana http://172.17.10.51:5601
    * import demo dashboard config from "export/export.json" to "Management-->Save Object -> import 
-   
+![Screenshot](img/5.png)    
+Check dashboard
+![Screenshot](img/1.png)   
+![Screenshot](img/2.png)
+![Screenshot](img/3.png)   
+![Screenshot](img/4.png)
 # Docker ELK stack
 
 [![Join the chat at https://gitter.im/deviantony/docker-elk](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/deviantony/docker-elk?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
