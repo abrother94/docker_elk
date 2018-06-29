@@ -8,13 +8,23 @@
 
          hosts:
          - 172.17.8.188
-    * docker-compose -f docker-compose.yml up
-    * make sure volt is up and psme service is running.
-    * run standalone Rest_Client in voltha environmnet.
+    * docker-compose -f docker-compose.yml up or  docker-compose -f docker-compose.yml up -d
+    * Make sure VOLT is up and PSME service is running.
+    * Make sure Rest_Client is running on host monitor server.
  ```
  * connect to kibana http://172.17.10.51:5601
-   * import demo dashboard config from "export/export.json" to "Management-->Save Object -> import 
-![Screenshot](img/5.png)    
+   * Create 2 indexs of  
+![Screenshot](img/0-1.png)   
+![Screenshot](img/0-2.png)   
+![Screenshot](img/0-3.png) 
+![Screenshot](img/0-4.png) 
+![Screenshot](img/0-3-1.png)
+![Screenshot](img/0-4.png) 
+* import demo dashboard config from "export/export.json" to "Management-->Save Object -> import 
+![Screenshot](img/5.png)  
+* OLT_UP/DOWN use hearbeat-* index 
+* Others use logstash-* index
+![Screenshot](img/5-1.png) 
 Check dashboard
 ![Screenshot](img/1.png)   
 ![Screenshot](img/2.png)
